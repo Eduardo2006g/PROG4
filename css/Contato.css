@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Thoma, sans-serif;
+}
+
+.header {
+    background-color: seagreen;
+    width: 100%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    min-height: 50px;
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+footer {
+    margin-top: auto;
+    min-height: 50px;
+    color: #fff;
+    background-color: seagreen;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+h1{
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
+    border: #333;
+}
+
+.wrapper {
+    width: 420px;
+    background: #fff;
+    color: gray;
+    border-radius: 10px;
+    padding: 0px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 2px solid rgba(201, 37, 37, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: red;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: gray;
+}
+
+.btn i {
+    font-size: 20px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00bcd4;
+    font-weight: 600;
+}
+
+.inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    box-shadow:rgba(201, 37, 37, 0.2) 3px 3px 3px;
+    outline: none;
+    resize: none;
+    border-radius: 10px;   
+}
+
+
+
+
+
